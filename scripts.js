@@ -153,11 +153,11 @@ function scrollToContact() {
         `;
       
         // Llamada a la API de Telegram (token y chat_id de ejemplo)
-        fetch(`https://api.telegram.org/bot123456789/sendMessage`, {
+        fetch(`https://api.telegram.org/bot1002767307:AAFWAqbVFNJwuh2BMm2nslxoC3ZwnRZHFuY/sendMessage`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            chat_id: "123456",
+            chat_id: "264423118",
             text: telegramMessage
           })
         })
