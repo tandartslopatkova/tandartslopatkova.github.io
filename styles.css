@@ -1,0 +1,251 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Tipografía base */
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+  }
+  
+  /* Encabezado */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .nav a:hover {
+    color: #0073e6; /* Ajusta el color al de tu marca */
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; /* Ajusta según tu preferencia */
+    background: linear-gradient(135deg, #0073e6, #005bb5);
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+  }
+  
+  .hero button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  .hero button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Servicios */
+  .services {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .service-card {
+    margin: 1rem auto;
+    max-width: 300px;
+    background-color: #f0f0f0;
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .service-card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+  }
+  
+  /* Contenedor general de la sección de contacto */
+.contact {
+    max-width: 500px;         /* Limita el ancho máximo para centrar el contenido */
+    margin: 3rem auto;        /* Centrado horizontal + espacio vertical */
+    text-align: left;         /* Alinea textos a la izquierda en lugar de center */
+    background-color: #fff;   /* Fondo blanco */
+    padding: 2rem;
+    border-radius: 8px;       /* Esquinas redondeadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  /* Título de la sección */
+  .contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    text-align: center; /* Centrado solo para el título */
+  }
+  
+  /* Espaciado entre etiquetas y campos */
+  .contact label {
+    display: block;          /* Cada label en su propia línea */
+    margin-bottom: 0.5rem;   /* Separación del label con el campo */
+    font-weight: 500;        /* Un poco más grueso que normal (400) */
+    color: #333;             /* Ajusta el color según tu paleta */
+  }
+  
+  /* Inputs y textarea (estilo base) */
+  .contact input[type="text"],
+  .contact input[type="email"],
+  .contact input[type="tel"],
+  .contact textarea {
+    width: 100%;                 /* Ocupa todo el ancho disponible */
+    padding: 0.75rem 1rem;       /* Espacio interno */
+    margin-bottom: 1rem;         /* Espacio inferior */
+    border: 1px solid #ccc;      /* Borde gris claro */
+    border-radius: 4px;          /* Esquinas suaves */
+    font-size: 1rem;
+    font-family: inherit;        /* Inherita la fuente definida en body */
+    color: #333; 
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  /* Efecto hover/enfoque (focus) en los campos */
+  .contact input[type="text"]:focus,
+  .contact input[type="email"]:focus,
+  .contact input[type="tel"]:focus,
+  .contact textarea:focus {
+    border-color: #0073e6; /* Un color azul (o el color principal de tu marca) */
+    outline: none;         /* Oculta el outline por defecto */
+  }
+  
+  /* Ajuste extra para intl-tel-input (posibles clases de la librería) */
+  .iti.iti--allow-dropdown,
+  .iti.iti--allow-dropdown input {
+    width: 100% !important; /* Asegura que el select de país y el input ocupen todo el ancho */
+  }
+  
+  /* Botón de envío */
+  .contact button[type="submit"] {
+    display: inline-block;
+    background-color: #0073e6; /* Color principal de tu marca (ejemplo) */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 0.5rem; /* Espacio extra arriba */
+  }
+  
+  /* Efecto hover en el botón */
+  .contact button[type="submit"]:hover {
+    background-color: #005bb5; /* Más oscuro al pasar el ratón */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  form label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  form input,
+  form textarea {
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    align-self: center;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+  }
+  
+  form button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .flag-select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .error-message {
+    color: #b00020;              /* Texto en rojo */
+    background-color: #ffeef0;   /* Fondo muy claro */
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #f5c6cb;   /* Un borde suave */
+    border-radius: 4px;
+    font-weight: 500;            /* Un poco más grueso de lo normal */
+  }
+  
+  /* Clase para el campo con error */
+  .error-field {
+    border: 2px solid #b00020;  /* Rojo o el color que prefieras */
+    outline: none; 
+  }
+  

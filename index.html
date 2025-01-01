@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tandarts Endo - Landing</title>
+
+  <!-- Fuente moderna (opcional) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" 
+    rel="stylesheet"
+  />
+
+  <!-- Archivo de estilos principal -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- CSS de intl-tel-input (Ejemplo CDN) -->
+  <!-- Ajusta la versión si lo deseas -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css"
+  />
+</head>
+
+<body>
+  <!-- Encabezado / Barra de navegación -->
+  <header class="header">
+    <div class="logo">
+      <!-- Nombre de la marca -->
+      <span class="lang-es">Tandarts Endo</span>
+      <span class="lang-en" style="display:none;">Tandarts Endo</span>
+      <span class="lang-nl" style="display:none;">Tandarts Endo</span>
+      <span class="lang-cs" style="display:none;">Tandarts Endo</span>
+    </div>
+
+    <nav class="nav">
+      <!-- Link Servicios -->
+      <a href="#servicios" class="lang-es">Servicios</a>
+      <a href="#servicios" class="lang-en" style="display:none;">Services</a>
+      <a href="#servicios" class="lang-nl" style="display:none;">Diensten</a>
+      <a href="#servicios" class="lang-cs" style="display:none;">Služby</a>
+
+      <!-- Link Contacto -->
+      <a href="#contacto" class="lang-es">Contacto</a>
+      <a href="#contacto" class="lang-en" style="display:none;">Contact</a>
+      <a href="#contacto" class="lang-nl" style="display:none;">Contact</a>
+      <a href="#contacto" class="lang-cs" style="display:none;">Kontakt</a>
+    </nav>
+
+    <!-- Selector de idioma con banderas en los <option> -->
+    <select id="languageSelector" class="flag-select">
+      <!-- Neerlandés por defecto -->
+      <option value="nl" selected>🇳🇱 Nederlands</option>
+      <option value="es">🇪🇸 Español</option>
+      <option value="en">🇬🇧 English</option>
+      <option value="cs">🇨🇿 Čeština</option>
+    </select>
+  </header>
+
+  <!-- Sección principal: Hero o portada -->
+  <section class="hero">
+    <!-- Título -->
+    <h1>
+      <span class="lang-es">Servicios de Endodoncia para Clínicas Dentales</span>
+      <span class="lang-en" style="display:none;">Endodontic Services for Dental Clinics</span>
+      <span class="lang-nl" style="display:none;">Endodontische diensten voor tandheelkundige klinieken</span>
+      <span class="lang-cs" style="display:none;">Endodontické služby pro stomatologické kliniky</span>
+    </h1>
+
+    <!-- Descripción -->
+    <p>
+      <span class="lang-es">
+        Ofrecemos servicios de endodoncia para dentistas que buscan calidad y confiabilidad. 
+        Contamos con dentistas de cultura internacional que hablan español, checo, neerlandés e inglés. 
+        Servimos en La Haya y alrededores.
+      </span>
+      <span class="lang-en" style="display:none;">
+        We offer endodontic services for dentists seeking quality and reliability. 
+        Our internationally oriented dentists speak Spanish, Czech, Dutch, and English. 
+        We operate in The Hague and surrounding areas.
+      </span>
+      <span class="lang-nl" style="display:none;">
+        Wij bieden endodontische diensten voor tandartsen die op zoek zijn naar kwaliteit en betrouwbaarheid. 
+        Onze internationaal georiënteerde tandartsen spreken Spaans, Tsjechisch, Nederlands en Engels. 
+        Wij zijn actief in Den Haag en omgeving.
+      </span>
+      <span class="lang-cs" style="display:none;">
+        Nabízíme endodontické služby pro zubní lékaře, kteří hledají kvalitu a spolehlivost. 
+        Naši mezinárodně zaměření zubaři hovoří španělsky, česky, nizozemsky a anglicky. 
+        Působíme v Haagu a okolí.
+      </span>
+    </p>
+
+    <!-- Botón para hacer scroll al contacto -->
+    <!-- La función scrollToContact se declara en scripts.js -->
+    <button onclick="scrollToContact()">
+      <span class="lang-es">Contáctanos</span>
+      <span class="lang-en" style="display:none;">Contact Us</span>
+      <span class="lang-nl" style="display:none;">Neem contact op</span>
+      <span class="lang-cs" style="display:none;">Kontaktujte nás</span>
+    </button>
+  </section>
+
+  <!-- Sección de servicios -->
+  <section id="servicios" class="services">
+    <!-- Título de la sección -->
+    <h2>
+      <span class="lang-es">Nuestros Servicios</span>
+      <span class="lang-en" style="display:none;">Our Services</span>
+      <span class="lang-nl" style="display:none;">Onze Diensten</span>
+      <span class="lang-cs" style="display:none;">Naše Služby</span>
+    </h2>
+
+    <!-- Servicio 1 -->
+    <div class="service-card">
+      <h3>
+        <span class="lang-es">Endodoncia Compleja</span>
+        <span class="lang-en" style="display:none;">Complex Endodontics</span>
+        <span class="lang-nl" style="display:none;">Complexe Endodontie</span>
+        <span class="lang-cs" style="display:none;">Komplexní endodoncie</span>
+      </h3>
+      <p>
+        <span class="lang-es">Tratamientos con tecnología avanzada para casos complejos.</span>
+        <span class="lang-en" style="display:none;">Advanced technology treatments for complex cases.</span>
+        <span class="lang-nl" style="display:none;">Behandelingen met geavanceerde technologie voor complexe gevallen.</span>
+        <span class="lang-cs" style="display:none;">Ošetření s pokročilou technologií pro složité případy.</span>
+      </p>
+    </div>
+
+    <!-- Servicio 2 -->
+    <div class="service-card">
+      <h3>
+        <span class="lang-es">Retratamiento de Conductos</span>
+        <span class="lang-en" style="display:none;">Root Canal Retreatment</span>
+        <span class="lang-nl" style="display:none;">Herbehandeling van wortelkanalen</span>
+        <span class="lang-cs" style="display:none;">Přepracování kořenových kanálků</span>
+      </h3>
+      <p>
+        <span class="lang-es">Evaluación y corrección de endodoncias anteriores.</span>
+        <span class="lang-en" style="display:none;">Evaluation and correction of previous root canal treatments.</span>
+        <span class="lang-nl" style="display:none;">Evaluatie en correctie van eerdere endodontische behandelingen.</span>
+        <span class="lang-cs" style="display:none;">Vyhodnocení a korekce dřívějších endodontických zákroků.</span>
+      </p>
+    </div>
+
+    <!-- Servicio 3 -->
+    <div class="service-card">
+      <h3>
+        <span class="lang-es">Asesoría y Formación</span>
+        <span class="lang-en" style="display:none;">Consultancy & Training</span>
+        <span class="lang-nl" style="display:none;">Advies & Opleiding</span>
+        <span class="lang-cs" style="display:none;">Poradenství a školení</span>
+      </h3>
+      <p>
+        <span class="lang-es">Soporte para clínicas que deseen mejorar sus tratamientos endodónticos.</span>
+        <span class="lang-en" style="display:none;">Support for clinics aiming to improve their endodontic treatments.</span>
+        <span class="lang-nl" style="display:none;">Ondersteuning voor praktijken die hun endodontische behandelingen willen verbeteren.</span>
+        <span class="lang-cs" style="display:none;">Podpora pro kliniky, které chtějí zlepšit své endodontické postupy.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección de contacto con formulario -->
+  <section id="contacto" class="contact">
+    <!-- Título de la sección -->
+    <h2>
+      <span class="lang-es">Contáctanos</span>
+      <span class="lang-en" style="display:none;">Contact Us</span>
+      <span class="lang-nl" style="display:none;">Neem contact op</span>
+      <span class="lang-cs" style="display:none;">Kontaktujte nás</span>
+    </h2>
+
+    <!-- Formulario -->
+    <form id="contactForm">
+      <!-- Contenedor para el mensaje de error -->
+      <div id="errorMessage" class="error-message" style="display: none;"></div>
+      
+      <!-- Nombre -->
+      <label for="name">
+        <span class="lang-es">Nombre</span>
+        <span class="lang-en" style="display:none;">Name</span>
+        <span class="lang-nl" style="display:none;">Naam</span>
+        <span class="lang-cs" style="display:none;">Jméno</span>
+      </label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        required
+        class="placeholder-field" 
+        data-placeholder-es="Tu nombre"
+        data-placeholder-en="Your name"
+        data-placeholder-nl="Uw naam"
+        data-placeholder-cs="Vaše jméno"
+      />
+
+      <!-- Correo electrónico -->
+      <label for="email">
+        <span class="lang-es">Correo electrónico</span>
+        <span class="lang-en" style="display:none;">Email</span>
+        <span class="lang-nl" style="display:none;">E-mailadres</span>
+        <span class="lang-cs" style="display:none;">E-mail</span>
+      </label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required
+        class="placeholder-field"
+        data-placeholder-es="Tu email"
+        data-placeholder-en="Your email"
+        data-placeholder-nl="Uw e-mailadres"
+        data-placeholder-cs="Váš e-mail"
+      />
+
+      <!-- Número de teléfono (con intl-tel-input) -->
+      <label for="phone">
+        <span class="lang-es">Número de teléfono</span>
+        <span class="lang-en" style="display:none;">Phone Number</span>
+        <span class="lang-nl" style="display:none;">Telefoonnummer</span>
+        <span class="lang-cs" style="display:none;">Telefonní číslo</span>
+      </label>
+      <input 
+        type="tel" 
+        id="phone" 
+        name="phone" 
+        required
+      />
+
+      <!-- Mensaje -->
+      <label for="message">
+        <span class="lang-es">Mensaje</span>
+        <span class="lang-en" style="display:none;">Message</span>
+        <span class="lang-nl" style="display:none;">Bericht</span>
+        <span class="lang-cs" style="display:none;">Zpráva</span>
+      </label>
+      <textarea 
+        id="message" 
+        name="message" 
+        required
+        class="placeholder-field"
+        data-placeholder-es="Tu mensaje"
+        data-placeholder-en="Your message"
+        data-placeholder-nl="Uw bericht"
+        data-placeholder-cs="Vaše zpráva"
+      ></textarea>
+
+      <!-- Botón de envío -->
+      <button type="submit">
+        <span class="lang-es">Enviar</span>
+        <span class="lang-en" style="display:none;">Send</span>
+        <span class="lang-nl" style="display:none;">Versturen</span>
+        <span class="lang-cs" style="display:none;">Odeslat</span>
+      </button>
+    </form>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <p>
+      <span class="lang-es">© 2025 Tandarts Lopatkova B.V. Todos los derechos reservados.</span>
+      <span class="lang-en" style="display:none;">© 2025 Tandarts Lopatkova B.V. All rights reserved.</span>
+      <span class="lang-nl" style="display:none;">© 2025 Tandarts Lopatkova B.V. Alle rechten voorbehouden.</span>
+      <span class="lang-cs" style="display:none;">© 2025 Tandarts Lopatkova B.V. Všechna práva vyhrazena.</span>
+    </p>
+  </footer>
+
+  <!-- Script de intl-tel-input (Ejemplo CDN) -->
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"
+  ></script>
+
+  <!-- scripts.js principal -->
+  <script src="scripts.js"></script>
+</body>
+</html>
